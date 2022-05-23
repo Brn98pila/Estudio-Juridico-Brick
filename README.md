@@ -1,1 +1,0 @@
-# Estudio-Juridico-Brick
