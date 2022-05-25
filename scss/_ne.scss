@@ -1,0 +1,28 @@
+
+#ne-h1{
+    padding: 30px 0px 30px 0px;
+
+
+    font-size: 50px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-align: center;
+    color: $rosa;
+    i{
+        color: $celeste;
+    }
+}
+
+.cards-ne{
+    display: flex;
+    flex-direction: column;
+    .card{
+        border-radius: 0px !important;
+        border: none !important;
+        height: 500px !important;
+        img{
+            
+            height: 500px !important;
+        }
+    }
+}

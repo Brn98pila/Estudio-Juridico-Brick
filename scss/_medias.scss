@@ -8,9 +8,6 @@
        height: 150px !important;
        position: fixed;
     }
-    .carousel-item img{
-        height: 100vh !important;
-    }
     .carousel-lema{
         position:absolute !important;
         width: 100% !important;
@@ -256,5 +253,83 @@ article{
         }
     }
 }
+
+/*MEDIAS QS*/
+
+@media screen and (min-width: 768px){
+    .qs_main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-area: 
+        "section aside"
+        "section aside"
+        "section aside"
+        "section aside";
+        .qs_aside{
+            grid-area: aside;
+            grid-column: 2;
+            #legal-h2{
+                display: inherit;
+                position: relative;
+            }
+            .qs-carousel{
+                bottom: 310px;
+            }
+        }
+        .qs_section{
+            grid-area: section;
+            grid-column: 1;
+            padding-top: 70px;
+            h1{
+                padding: 20px !important;
+                font-size: 55px !important;
+                line-height: 80px !important;
+            }
+        }
+    }
+    .qs_img_container{
+        background: url("../images/intro-hover.jpg") no-repeat center;
+        background-position: -550px -450px;
+        height: 95vh;
+        .qs_title{
+            background-color: rgba(141, 27, 84, 0) !important;
+            font-size: 70px;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            margin-left: 50%;
+            margin-bottom: 20%;
+        }
+    }
+    .qs-carousel{
+        .carousel-team{
+            top: 50px;
+        }
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .qs_main{
+        grid-template-columns: 70% 30%;
+        .qs_section{
+            padding-right: 80px;
+        }
+    }
+    .qs_img_container{
+        background-position: center -450px;
+    }
+    .qs-carousel{
+        bottom: 300px !important;
+    
+    }
+}
+@media screen and (min-width: 1300px){
+    .qs-carousel{
+        bottom: 250px !important;
+    }
+}
+   
+   
 
 

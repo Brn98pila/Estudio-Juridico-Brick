@@ -1,6 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "variables";
+@import "qs";
+@import "ne";
 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
 
 
 /* BOOSTRAP */
@@ -53,12 +60,18 @@
             text-decoration: none !important;
             color: #fff !important;
         }
+        a:hover{
+            background-color: $negro;
+        }
     }
 }
 .carousel-item{
     img{
         height: 250px;
         object-fit: cover;
+    }
+    #item-3 h2 i{
+        color: $rosa !important;
     }
     div{
         min-height: 210px;
@@ -73,6 +86,9 @@
             padding: 20px 20px 10px;
             color: #fff;
             font-family: 'Roboto', sans-serif;
+            i{
+                color: $verde-claro !important;
+            }
         }
     } 
     #item-1{
@@ -130,7 +146,7 @@
     min-height: 180px;
     padding: 0px 20px 0px 15px;
     margin-bottom: 50px;
-    background-image: url(/images/skin-bg.jpg);
+    background-image: url("../images/skin-bg.jpg");
     object-fit: cover;
     h3{
         font-size: 32px;
@@ -150,10 +166,10 @@
                 color: $rosa !important;
             }
             &::after{
-             background-image: url(/images/Icons/plus-lg.svg) !important;
+             background-image: url("../images/Icons/plus-lg.svg") !important;
             }
             &:focus::after{
-                background-image: url(/images/Icons/x-lg.svg) !important;
+                background-image: url("../images/Icons/x-lg.svg") !important;
             }
         }
     }
@@ -166,7 +182,7 @@
 }
 #areas-h2{
     padding: 30px 15px 30px 15px;
-    background-image: url(/images/skin-bg.jpg);
+    background-image: url("../images/skin-bg.jpg");
     object-fit: cover;
     color: #fff;
     margin-bottom: 0%;
