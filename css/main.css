@@ -7946,6 +7946,59 @@ textarea.form-control-lg {
   font-weight: 300;
   text-align: center; }
 
+#qh-background {
+  background-image: url("../images/slide-6-hover.jpg");
+  background-position: right -180px;
+  background-size: 240%;
+  height: 60vh !important;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: inset 0px 10px 40px #000; }
+  #qh-background div {
+    width: 100%; }
+    #qh-background div h2, #qh-background div .h2 {
+      padding: 20px 0px 20px 0px;
+      margin-bottom: 0%;
+      font-size: 30px;
+      font-family: 'Roboto';
+      font-weight: 100;
+      text-align: center;
+      color: #fff;
+      background-color: #8D1B54; }
+      #qh-background div h2 i, #qh-background div .h2 i {
+        color: #548C8D; }
+
+.qh-article h1, .qh-article .h1 {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 50px;
+  padding: 50px 20px 50px 10px; }
+
+.qh-article p {
+  padding: 0px 20px 30px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px; }
+
+.qh-article h3, .qh-article .h3 {
+  font-weight: 700;
+  font-stretch: condensed;
+  padding: 0px 20px 30px 10px;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif; }
+
+.qh-article h4, .qh-article .h4 {
+  font-family: 'Roboto';
+  color: #8D1B54;
+  font-size: 22px;
+  font-weight: 700;
+  font-stretch: condensed;
+  padding: 0px 20px 30px 10px; }
+
+.qh-aside {
+  padding: 0px 10px 100px 10px; }
+
 * {
   padding: 0%;
   margin: 0%;
@@ -8138,31 +8191,31 @@ textarea.form-control-lg {
     background-color: #717870; }
 
 /*Articulos*/
-article {
+#index-article {
   padding-top: 100px; }
-  article hr {
+  #index-article hr {
     margin: 0px 15px 0px 15px;
     border: 1px solid; }
-  article h3, article .h3 {
+  #index-article h3, #index-article .h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
     text-align: center;
     font-weight: 300;
     padding-bottom: 50px; }
-  article .carousel-articulos {
+  #index-article .carousel-articulos {
     padding-top: 30px; }
-    article .carousel-articulos .carousel-indicators {
+    #index-article .carousel-articulos .carousel-indicators {
       top: 180px !important; }
-      article .carousel-articulos .carousel-indicators button {
+      #index-article .carousel-articulos .carousel-indicators button {
         background-color: #717870 !important; }
-    article .carousel-articulos .carousel-inner .carousel-item h4, article .carousel-articulos .carousel-inner .carousel-item .h4 {
+    #index-article .carousel-articulos .carousel-inner .carousel-item h4, #index-article .carousel-articulos .carousel-inner .carousel-item .h4 {
       text-align: center;
       color: #8D1B54;
       font-family: 'PT Serif', serif;
       font-size: 24px !important;
       font-weight: 700;
       line-height: 34px; }
-      article .carousel-articulos .carousel-inner .carousel-item h4:hover, article .carousel-articulos .carousel-inner .carousel-item .h4:hover {
+      #index-article .carousel-articulos .carousel-inner .carousel-item h4:hover, #index-article .carousel-articulos .carousel-inner .carousel-item .h4:hover {
         color: #548C8D; }
 
 #legal-h2 {
@@ -8345,7 +8398,7 @@ article {
       grid-area: area-4; }
     .areas #area-5 {
       grid-area: area-5; }
-  article {
+  #index-article {
     padding-left: 100px;
     padding-right: 100px; }
   /*CAROUSEL TEAM*/
@@ -8382,8 +8435,9 @@ article {
     background-color: rgba(141, 27, 84, 0) !important; }
     .navbar-nav li a {
       font-family: 'Roboto', sans-serif;
-      font-weight: 200;
-      font-size: 12px; }
+      font-weight: 300;
+      font-size: 12px;
+      padding: 10px !important; }
   .intro {
     margin: 200px; }
   .areas {
@@ -8394,11 +8448,11 @@ article {
     #area-1 h4, .areas #area-2 h4, .areas #area-3 h4, .areas #area-4 h4, .areas #area-5 h4, #area-1 .h4, .areas #area-2 .h4, .areas #area-3 .h4, .areas #area-4 .h4, .areas #area-5 .h4 {
       font-size: 25px !important; } }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1350px) {
   .navbar-collapse {
     padding-left: 130px; }
   .navbar-nav li a {
-    font-size: 18px; }
+    font-size: 16px; }
   .areas {
     display: flex;
     flex-direction: row; }
@@ -8495,7 +8549,56 @@ article {
 @media screen and (min-width: 1024px) {
   .ne-button {
     display: none !important; }
-  .ne-navbar-nav li {
-    color: #353441 !important; }
-    .ne-navbar-nav li a {
-      color: #353441 !important; } }
+  #ne-a {
+    color: #353441 !important;
+    font-weight: 300; }
+    #ne-a:hover {
+      color: #fff !important; } }
+
+/*Que Hacemos Medias*/
+@media screen and (min-width: 768px) {
+  #qh-background {
+    background-repeat: no-repeat;
+    background-position: -900px -400px;
+    background-size: 220%;
+    height: 95vh !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center; }
+    #qh-background div h2, #qh-background div .h2 {
+      background-color: rgba(141, 27, 84, 0) !important;
+      font-size: 80px;
+      padding-left: 80px; }
+      #qh-background div h2 i, #qh-background div .h2 i {
+        color: #B7FF66; }
+  .qh-article {
+    padding-top: 40px; }
+    .qh-article h1, .qh-article .h1 {
+      font-size: 55px;
+      line-height: 76px; }
+  #qh-areas {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (min-width: 1024px) {
+  #qh-background {
+    background-position: -700px -450px;
+    background-size: 170%; }
+    #qh-background div h2, #qh-background div .h2 {
+      padding-left: 250px; }
+  #qh-areas {
+    padding-left: 10px;
+    padding-right: 10px; }
+    #qh-areas #area-1, #qh-areas .areas #area-2, .areas #qh-areas #area-2, #qh-areas .areas #area-3, .areas #qh-areas #area-3, #qh-areas .areas #area-4, .areas #qh-areas #area-4, #qh-areas .areas #area-5, .areas #qh-areas #area-5, #qh-areas #area-2, #qh-areas #area-3, #qh-areas #area-4, #qh-areas #area-5 {
+      width: 100%; }
+      #qh-areas #area-1 h4, #qh-areas .areas #area-2 h4, .areas #qh-areas #area-2 h4, #qh-areas .areas #area-3 h4, .areas #qh-areas #area-3 h4, #qh-areas .areas #area-4 h4, .areas #qh-areas #area-4 h4, #qh-areas .areas #area-5 h4, .areas #qh-areas #area-5 h4, #qh-areas #area-1 .h4, #qh-areas .areas #area-2 .h4, .areas #qh-areas #area-2 .h4, #qh-areas .areas #area-3 .h4, .areas #qh-areas #area-3 .h4, #qh-areas .areas #area-4 .h4, .areas #qh-areas #area-4 .h4, #qh-areas .areas #area-5 .h4, .areas #qh-areas #area-5 .h4, #qh-areas #area-2 h4, #qh-areas #area-2 .h4, #qh-areas #area-3 h4, #qh-areas #area-3 .h4, #qh-areas #area-4 h4, #qh-areas #area-4 .h4, #qh-areas #area-5 h4, #qh-areas #area-5 .h4 {
+        font-size: 30px !important; } }
+
+@media screen and (min-width: 1366px) {
+  #qh-background {
+    background-position: -300px -400px;
+    background-size: 125%;
+    height: 85vh !important; }
+    #qh-background div h2, #qh-background div .h2 {
+      padding-left: 600px !important; } }
