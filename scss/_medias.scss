@@ -329,6 +329,15 @@ article{
         bottom: 250px !important;
     }
 }
+/*MEDIAS de Nuestro equipo*/
+
+
+@media screen and (min-width: 768px){
+    .cards-ne{
+        flex-direction: inherit;
+        flex-wrap: wrap;
+    }
+}
    
    
 

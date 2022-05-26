@@ -16,13 +16,95 @@
 .cards-ne{
     display: flex;
     flex-direction: column;
+    .ab-1{
+        background-image: url("../images/alan-bick-thumb.jpg");
+    }
+    .ab-2{
+        background-image: url("../images/kimberly-bick-thumb.jpg");
+    }
+    .ab-3{
+        background-image: url("../images/corrie-ld.jpg");
+    }
+    .ab-4{
+        background-image: url("../images/sheila-mojtehedi-landing-min.jpg");
+    }
+    .ab-5{
+        background-image: url("../images/lauren-ld-min.jpg");
+    }
+    .ab-6{
+        background-image: url("../images/tamara-ld-min.jpg");
+    }
     .card{
         border-radius: 0px !important;
         border: none !important;
-        height: 500px !important;
-        img{
-            
-            height: 500px !important;
+        height: 490px !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 320px;
+       .card-img-overlay{
+            display: flex;
+            flex-direction: column;
+            text-align: center !important;
+            justify-content: flex-end !important;
+            padding: 10px 10px 40px 10px !important;
+            h5{
+                font-family: serif, sans-serif !important;
+                font-size: 30px !important;
+                font-weight: 600;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 200;
+            }
         }
+        .card-hover{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            justify-content: center;
+
+          
+            p{
+                position: absolute;
+                bottom: -15px;
+              
+                width: 100%;
+                height: 490px;
+                text-align: center;
+
+
+                font-weight: 300;
+                padding: 30px;
+                font-family: 'Roboto';
+                font-size: 14px;
+
+                opacity: 0;
+                z-index: 1 !important;
+                background-color: rgba($color: $rosa , $alpha: 0.9);
+                &:hover{
+                    opacity: 1;
+                    transition:all .5s ease-in-out;
+                    }
+             button{
+                 padding: 5px;
+                 border: 0px solid;
+                 background-color: rgba($color: $rosa , $alpha: 0);
+                 color: #fff;
+                 font-family: 'Roboto';
+             }
+            }
+         
+           
+        }
+    }
+}
+.ne-main{
+    p{
+        padding: 100px 30px 100px 30px;
+        font-family: 'Roboto';
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
     }
 }
