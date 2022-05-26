@@ -7872,6 +7872,9 @@ textarea.form-control-lg {
   #ne-h1 i {
     color: #548C8D; }
 
+.navbar-toggler p {
+  display: none; }
+
 .cards-ne {
   display: flex;
   flex-direction: column; }
@@ -8229,6 +8232,9 @@ article {
     background-color: rgba(141, 27, 84, 0) !important;
     height: 150px !important;
     position: fixed; }
+  .carousel-item img {
+    height: 100vh;
+    object-fit: cover; }
   .carousel-lema {
     position: absolute !important;
     width: 100% !important;
@@ -8457,4 +8463,39 @@ article {
 @media screen and (min-width: 768px) {
   .cards-ne {
     flex-direction: inherit;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .ne-navbar {
+    background-color: #fff !important;
+    border-bottom: 2px solid #548C8D; }
+    .ne-navbar .container-fluid button, .ne-navbar .container-sm button, .ne-navbar .container-md button, .ne-navbar .container-lg button, .ne-navbar .container-xl button, .ne-navbar .container-xxl button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      color: #000;
+      border-color: #000 !important;
+      font-size: 18px; }
+      .ne-navbar .container-fluid button p, .ne-navbar .container-sm button p, .ne-navbar .container-md button p, .ne-navbar .container-lg button p, .ne-navbar .container-xl button p, .ne-navbar .container-xxl button p {
+        display: inherit;
+        padding-right: 5px;
+        margin-bottom: 0px; }
+      .ne-navbar .container-fluid button svg, .ne-navbar .container-sm button svg, .ne-navbar .container-md button svg, .ne-navbar .container-lg button svg, .ne-navbar .container-xl button svg, .ne-navbar .container-xxl button svg {
+        color: #000 !important; }
+  #ne-h1 {
+    padding: 180px 0px 30px 0px;
+    font-size: 74px;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-align: center;
+    color: #8D1B54; }
+    #ne-h1 i {
+      color: #548C8D; } }
+
+@media screen and (min-width: 1024px) {
+  .ne-button {
+    display: none !important; }
+  .ne-navbar-nav li {
+    color: #353441 !important; }
+    .ne-navbar-nav li a {
+      color: #353441 !important; } }

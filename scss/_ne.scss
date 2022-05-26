@@ -13,6 +13,12 @@
     }
 }
 
+.navbar-toggler{
+    p{
+        display: none;
+    }
+}
+
 .cards-ne{
     display: flex;
     flex-direction: column;
