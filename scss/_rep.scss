@@ -1,0 +1,64 @@
+#rep-background{
+    background-image: url("../images/slide-2-hover.jpg");
+    background-position: center -200px;
+    background-size: 270%;
+    height: 60vh !important;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 10px 32px 5px -200px rgba(0,0,0,0.12) inset;
+    -webkit-box-shadow: 10px 32px 5px -200px rgba(0,0,0,0.12) inset;
+    -moz-box-shadow: 10px 32px 5px -200px rgba(0,0,0,0.12) inset;
+    
+    div{
+        width: 100%;
+        h2{
+        padding: 20px 0px 20px 0px;
+        margin-bottom: 0%;
+        
+
+
+        font-size: 30px;
+        font-family: 'Roboto';
+        font-weight: 100;
+        text-align: center;
+        color: #fff;
+        background-color: $rosa;
+        i{
+            color: $celeste;
+        }
+    }
+    }
+    }
+
+.rep-article{
+    h1{
+        font-size: 32px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        padding: 50px 15px 30px 15px;
+        line-height: 45px;
+    }
+    p{
+        padding: 0px 15px 30px 15px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        padding: 0 15px 30px 15px;
+        font-stretch: condensed;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+    ul{
+        padding: 0px 15px 30px 50px;
+        li{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+           
+        }
+    }
+}

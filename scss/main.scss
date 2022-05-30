@@ -3,6 +3,8 @@
 @import "qs";
 @import "ne";
 @import "qh";
+@import "rep";
+@import "en";
 
 *{
     padding: 0%;
@@ -81,7 +83,7 @@
         justify-content: center;
         h2{
             text-align: center;
-            font-size: 30px;
+            font-size: $size+2;
             font-weight: 100;
             line-height: 40px;
             padding: 20px 20px 10px;
@@ -118,14 +120,13 @@
 /*Intro*/
 
 .intro{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     padding-top: 50px;
     h2{
-        font-size: 35px;
+        font-size:  $size+29;
         line-height: 24px;
         font-weight: 300;
         font-family: 'Roboto', sans-serif;
@@ -133,16 +134,15 @@
     p{
         padding: 30px 10px 20px 10px;
         line-height: 24px;
-        font-size: 18px;
+        font-size: $size+2;
         font-weight: 300;
         font-style: thin;
         color: #000;
     }
 }
 .intro_why{
-    display: flex;
+    @include flex-center;
     text-align: left;
-    justify-content: center;
     align-items: center;
     min-height: 180px;
     padding: 0px 20px 0px 15px;
@@ -150,7 +150,7 @@
     background-image: url("../images/skin-bg.jpg");
     object-fit: cover;
     h3{
-        font-size: 32px;
+        font-size: $size*2;
         font-weight: 300;
         line-height: 40px;
         color: #fff;
@@ -160,7 +160,7 @@
     h2{
         button{
             padding: 25px 10px 25px !important;
-            font-size: 25px !important;
+            font-size: $size+9 !important;
             font-family: serif, sans-serif !important;
             &:focus{
                 background-color: #fff !important;
@@ -176,7 +176,7 @@
     }
     div .accordion-body{
         padding: 10px !important;
-        font-size: 18px;
+        font-size: $size+2;
         font-weight: 200;
     }
   
@@ -191,7 +191,7 @@
 
     font-weight: 400;
     line-height: 45px;
-    font-size: 34px;
+    font-size: $size+18px;
     text-align: center;
 }
 .areas{
@@ -214,12 +214,12 @@
         background-color: $rosa;
 
         text-align: center;
-        justify-content: center;
         align-items: center;
-        display: flex;
+        @include flex-center;
+
         cursor: pointer;
         h4{
-            font-size: 26px
+            font-size: $size+10;
         }
         &:hover{
             opacity: 0.7;
@@ -257,7 +257,7 @@
     }
     h3{
         font-family: 'Roboto', sans-serif;
-        font-size: 35px;
+        font-size: $size+19;
         text-align: center;
         font-weight: 300;
         padding-bottom: 50px;
@@ -275,7 +275,7 @@
             text-align: center;
             color: $rosa;
             font-family: 'PT Serif', serif;
-            font-size: 24px !important;
+            font-size: $size+8 !important;
             font-weight: 700;
             line-height: 34px;
             &:hover{
@@ -308,9 +308,8 @@
 /*FRASE*/
 
 .main_frase{
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     img{
@@ -319,13 +318,13 @@
     }
     div h3{
         font-family: 'PT Serif', serif;
-        font-size: 40px;
+        font-size: $size+24;
         line-height: 50px;
         padding: 20px 10px 20px 10px;
     }
     div h5{
         font-family: 'PT Serif', serif;
-        font-size: 24px;
+        font-size: $size+8;
         padding: 20px 10px 20px 10px;
         line-height: 35px;
         }
@@ -337,11 +336,10 @@
     background-color: $negro;
     padding-bottom: 40px;
     div ul{
-        display: flex;
+        @include flex-center;
         flex-direction: row;
         list-style-type: none;
         color: $celeste;
-        justify-content: center;
         padding: 0%;
         li{
             padding: 40px 15px 15px 15px;

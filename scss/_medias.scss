@@ -1,6 +1,6 @@
 /*MEDIAS MAIN*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: map-get($breakpoints, md)){
 
 /*BOOSTRAP*/
     .navbar{
@@ -208,7 +208,7 @@
     }
 }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: map-get($breakpoints, lg)){
     .container-fluid{
         img{
             width: 200px;
@@ -240,7 +240,7 @@
     }
 
 }
-@media screen and (min-width: 1350px){
+@media screen and (min-width: map-get($breakpoints, xl)){
     .navbar-collapse{
         padding-left: 130px;
     }
@@ -263,7 +263,7 @@
 
 /*MEDIAS QS*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: map-get($breakpoints, md)){
     .qs_main{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -316,7 +316,7 @@
     }
     
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: map-get($breakpoints, lg)){
     .qs_main{
         grid-template-columns: 70% 30%;
         .qs_section{
@@ -331,7 +331,7 @@
     
     }
 }
-@media screen and (min-width: 1300px){
+@media screen and (min-width:map-get($breakpoints, xl)){
     .qs-carousel{
         bottom: 250px !important;
     }
@@ -339,7 +339,7 @@
 /*MEDIAS de Nuestro equipo*/
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: map-get($breakpoints, md)){
     .cards-ne{
         flex-direction: inherit;
         flex-wrap: wrap;
@@ -383,7 +383,7 @@
     }
 }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: map-get($breakpoints, lg)){
     .ne-button{
         display: none !important;
     }
@@ -398,7 +398,7 @@
 
 /*Que Hacemos Medias*/
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: map-get($breakpoints, md)){
     #qh-background{
         background-repeat: no-repeat;
         background-position: -900px -400px;
@@ -430,7 +430,7 @@
         flex-direction: column;
     }
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: map-get($breakpoints, lg)){
     #qh-background{
         background-position: -700px -450px;
         background-size: 170%;
@@ -449,7 +449,7 @@
         }
     }
 }
-@media screen and (min-width: 1366px){
+@media screen and (min-width: map-get($breakpoints, xl)){
     #qh-background{
         background-position: -300px -400px;
         background-size: 125%;
@@ -457,6 +457,108 @@
         div h2{
             padding-left: 600px !important;
         }
+    }
+}
+@media screen and (min-width:map-get($breakpoints, md)){
+    #rep-background{
+        background-repeat: no-repeat;
+        background-position: center -400px;
+        background-size: 240%;
+        height: 95vh !important;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        div h2{
+            background-color: rgba(141, 27, 84, 0) !important;
+            font-size: 80px;
+            padding-right: 80px;
+            text-align: right;
+            i{
+                color: $verde-claro;
+            }
+           
+        }
+    }
+    .rep-article{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width: map-get($breakpoints, lg)){
+    #rep-background{
+        background-position: -400px -400px;
+        background-size: 180%;
+        div h2{
+            padding-left: 250px;
+        }
+    }
+    #rep-areas{
+        padding-left: 10px;
+        padding-right: 10px;
+        #area-1, #area-2, #area-3, #area-4, #area-5 {
+            width: 100%;
+            h4{
+                font-size: 30px !important;
+            }
+        }
+    }
+    .rep-article{
+        h1{
+            font-size: 60px;
+            line-height: 84px;
+            font-weight: 300;
+        }
+    }
+}
+@media screen and (min-width: map-get($breakpoints, xl)){
+    #rep-background{
+        background-position: -300px -400px;
+        background-size: 125%;
+        height: 85vh !important;
+        div h2{
+            padding-left: 600px !important;
+        }
+    }
+}
+
+/*ENCONTRANOS*/
+
+
+@media screen and (min-width: map-get($breakpoints, md)){
+    #main-en{
+        background-image: url('../images/slide-5-hover.jpg');
+        background-repeat: no-repeat !important;
+        background-position: center center;
+        padding-bottom: 100px;
+        div h2{
+            font-size: 45px;
+            line-height: 60px;
+        }
+        div p{
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+    #en-nav{
+        position: absolute;
+    }
+}
+@media screen and (min-width: map-get($breakpoints, lg)){
+    #main-en{
+        background-size: cover;
+        div h2{
+            font-size: 55px;
+            line-height: 70px;
+        }
+    }
+    #div-2{
+        padding-left: 120px;
+    }
+}
+@media screen and (min-width: map-get($breakpoints, xl)){
+    #main-en{
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
