@@ -6,7 +6,24 @@
     .navbar{
        background-color: rgba(141, 27, 84, 0) !important;
        height: 150px !important;
-       position: fixed;
+       position:absolute;
+       .container-fluid{
+        button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-self: center;
+            align-content: center;
+            
+            font-size: 18px;
+            #light-nav{
+                display: inherit;
+                padding-right: 5px;
+                margin-bottom: 0px;
+                color: #fff;
+            }
+    } 
+}
     }
     .carousel-item{
         img{
@@ -384,7 +401,7 @@
 }
 }
 @media screen and (min-width: map-get($breakpoints, lg)){
-    .ne-button{
+    .menu-button{
         display: none !important;
     }
     #ne-a{

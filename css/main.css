@@ -8111,6 +8111,8 @@ textarea.form-control-lg {
   border-radius: 0px !important; }
   .btn:active {
     background-color: #cc1671 !important; }
+  .btn:hover {
+    background-color: #770e43 !important; }
 
 * {
   padding: 0%;
@@ -8120,7 +8122,7 @@ textarea.form-control-lg {
 /* BOOSTRAP */
 .navbar {
   background-color: #801f4f !important;
-  position: sticky;
+  position: fixed;
   z-index: 9;
   width: 100%; }
 
@@ -8174,7 +8176,7 @@ textarea.form-control-lg {
   justify-content: center; }
   .carousel-item div h2, .carousel-item div .h2 {
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 100;
     line-height: 40px;
     padding: 20px 20px 10px;
@@ -8203,6 +8205,9 @@ textarea.form-control-lg {
 
 .carousel-item #item-7 {
   background-color: #717870; }
+
+.navbar-toggler #light-nav {
+  display: none; }
 
 /*Intro*/
 .intro {
@@ -8380,8 +8385,11 @@ textarea.form-control-lg {
     .main_footer div ul li {
       padding: 40px 15px 15px 15px;
       font-size: 20px; }
-      .main_footer div ul li:hover {
-        color: #fff; }
+      .main_footer div ul li a {
+        text-decoration-color: none !important;
+        color: #548C8D; }
+        .main_footer div ul li a:hover {
+          color: #fff; }
   .main_footer div p {
     text-align: center;
     color: #7b7d9e;
@@ -8397,7 +8405,19 @@ textarea.form-control-lg {
   .navbar {
     background-color: rgba(141, 27, 84, 0) !important;
     height: 150px !important;
-    position: fixed; }
+    position: absolute; }
+    .navbar .container-fluid button, .navbar .container-sm button, .navbar .container-md button, .navbar .container-lg button, .navbar .container-xl button, .navbar .container-xxl button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+      font-size: 18px; }
+      .navbar .container-fluid button #light-nav, .navbar .container-sm button #light-nav, .navbar .container-md button #light-nav, .navbar .container-lg button #light-nav, .navbar .container-xl button #light-nav, .navbar .container-xxl button #light-nav {
+        display: inherit;
+        padding-right: 5px;
+        margin-bottom: 0px;
+        color: #fff; }
   .carousel-item img {
     height: 100vh;
     object-fit: cover; }
@@ -8660,7 +8680,7 @@ textarea.form-control-lg {
       color: #548C8D; } }
 
 @media screen and (min-width: 1024px) {
-  .ne-button {
+  .menu-button {
     display: none !important; }
   #ne-a {
     color: #353441 !important;

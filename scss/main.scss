@@ -16,7 +16,7 @@
 /* BOOSTRAP */
 .navbar{
     background-color: $pink-700 !important;
-    position: sticky;
+    position: fixed;
     z-index: 9;
     width: 100%;
 }
@@ -83,7 +83,7 @@
         justify-content: center;
         h2{
             text-align: center;
-            font-size: $size+2;
+            font-size: $size+12;
             font-weight: 100;
             line-height: 40px;
             padding: 20px 20px 10px;
@@ -116,6 +116,12 @@
         background-color: $gris;
     }
 } 
+
+.navbar-toggler{
+    #light-nav{
+        display: none;
+    }
+}
 
 /*Intro*/
 
@@ -344,8 +350,12 @@
         li{
             padding: 40px 15px 15px 15px;
             font-size: 20px;
-            &:hover{
-                color: #fff;
+            a{
+                text-decoration-color: none !important;
+                color: $celeste;
+                &:hover{
+                    color: #fff;
+                }
             }
         }        
     }
