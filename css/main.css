@@ -7861,12 +7861,13 @@ textarea.form-control-lg {
   font-weight: 100;
   font-family: 'Roboto';
   text-align: center;
-  margin-top: 240px !important; }
+  margin-top: 270px !important;
+  margin-bottom: 0px !important; }
   .qs_title i {
     color: #B7FF66; }
 
 #ne-h1 {
-  padding: 30px 0px 30px 0px;
+  padding: 100px 0px 30px 0px;
   font-size: 50px;
   font-family: 'Roboto';
   font-weight: 100;
@@ -7951,16 +7952,16 @@ textarea.form-control-lg {
 
 #qh-background {
   background-image: url("../images/slide-6-hover.jpg");
-  background-position: right -180px;
+  background-position: right -140px;
   background-size: 240%;
-  height: 60vh !important;
+  height: 65vh !important;
   display: flex;
   align-items: flex-end;
   box-shadow: inset 0px 10px 40px #000; }
   #qh-background div {
     width: 100%; }
     #qh-background div h2, #qh-background div .h2 {
-      padding: 20px 0px 20px 0px;
+      padding: 20px 0px 20px 0px !important;
       margin-bottom: 0%;
       font-size: 30px;
       font-family: 'Roboto';
@@ -8004,9 +8005,9 @@ textarea.form-control-lg {
 
 #rep-background {
   background-image: url("../images/slide-2-hover.jpg");
-  background-position: center -200px;
+  background-position: center -150px;
   background-size: 270%;
-  height: 60vh !important;
+  height: 75vh !important;
   display: flex;
   align-items: flex-end;
   box-shadow: 10px 32px 5px -200px rgba(0, 0, 0, 0.12) inset;
@@ -8065,6 +8066,7 @@ textarea.form-control-lg {
     font-weight: 300;
     line-height: 40px;
     padding-bottom: 30px;
+    padding-top: 30px;
     text-align: left; }
   #main-en div p {
     font-size: 18px;
@@ -8180,6 +8182,7 @@ textarea.form-control-lg {
     font-weight: 100;
     line-height: 40px;
     padding: 20px 20px 10px;
+    user-select: none;
     color: #fff;
     font-family: 'Roboto', sans-serif; }
     .carousel-item div h2 i, .carousel-item div .h2 i {

@@ -1,8 +1,8 @@
 #qh-background{
     background-image: url("../images/slide-6-hover.jpg");
-    background-position: right -180px;
+    background-position: right -140px;
     background-size: 240%;
-    height: 60vh !important;
+    height: 65vh !important;
     display: flex;
     align-items: flex-end;
     box-shadow: inset 0px 10px 40px #000;
@@ -10,7 +10,7 @@
     div{
         width: 100%;
         h2{
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 20px 0px !important;
         margin-bottom: 0%;
         
 
